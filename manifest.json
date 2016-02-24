@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+    "name": "MODI-fy",
+    "description": "Are you tired of hearing the same old Afzal,JNU and hordes of other non-important news? Don’t worry! This plugin will fix it all!.",
+    "version": "4.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "wordlist.js",
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
